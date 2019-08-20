@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace YahtzeeGame
 {
-    class Program
+    public class Dice
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("hello, world");
-        }
+
     }
 }
