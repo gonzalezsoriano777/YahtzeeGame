@@ -12,7 +12,17 @@ namespace YahtzeeGame
         {
 
             Dice newDice = new Dice();
-            newDice.rollDice();
+
+            int[][] diceResult = newDice.rollDicesThreeTimes();
+
+            foreach (int[] row in diceResult)
+            {
+                foreach (var dice in row)
+                {
+                    Console.WriteLine(dice);
+                }
+            }
+
 
         }
     }
