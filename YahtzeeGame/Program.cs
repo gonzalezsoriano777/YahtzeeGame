@@ -10,7 +10,10 @@ namespace YahtzeeGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello, world");
+
+            Dice newDice = new Dice();
+            newDice.rollDice();
+
         }
     }
 }
