@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace YahtzeeGame
 {
-    class Program
+    public class Dice
     {
-        static void Main(string[] args)
+        Random dice = new Random();
+        int[] gameDice = new int[5];
+
+        public void rollDice()
         {
-
-            Dice newDice = new Dice();
-        
-            int[][] diceResult = newDice.rollDicesThreeTimes();
-
-            foreach (int[] row in diceResult)
+            for(int diceRoll = 0; diceRoll < gameDice.Length; diceRoll++)
             {
-                foreach (var dice in row)
-                {
-                    Console.WriteLine(dice);
-                }
+                var diceResult = dice.Next(1, 7);
+                gameDice[diceRoll] = diceResult;
+                Console.WriteLine(gameDice[diceRoll]);
             }
+
         }
+   
     }
 }

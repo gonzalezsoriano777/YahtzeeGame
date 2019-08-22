@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace YahtzeeGame
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
             Dice newDice = new Dice();
 
+            /*
             int[][] diceResult = newDice.rollDicesThreeTimes();
 
             foreach (int[] row in diceResult)
@@ -23,6 +24,7 @@ namespace YahtzeeGame
                 }
             }
 
+            */
 
         }
     }
