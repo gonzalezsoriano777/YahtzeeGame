@@ -12,7 +12,7 @@ namespace YahtzeeGame
         {
 
             Dice newDice = new Dice();
-
+        
             int[][] diceResult = newDice.rollDicesThreeTimes();
 
             foreach (int[] row in diceResult)
