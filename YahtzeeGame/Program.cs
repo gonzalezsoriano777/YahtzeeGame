@@ -19,7 +19,7 @@ namespace YahtzeeGame
 
             foreach (int[] row in diceResult)
             {
-                if (rounds < 4)
+                if (rounds <= 3)
                 {
                     Console.WriteLine("Round {0}: ", rounds);
                     rounds++;

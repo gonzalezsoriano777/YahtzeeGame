@@ -26,8 +26,9 @@ namespace YahtzeeGame
         {
 
             int firstRoll = 5;
-            int secondRoll = 5; 
+            int secondRoll = 5;
             int thirdRoll = 5;
+
 
             int[][] roll = new int[3][];
             roll[0] = new int[5];
@@ -38,10 +39,23 @@ namespace YahtzeeGame
 
             while(rollCount < 3)
             {
-
-                for (int d = 1; d < firstRoll; d++)
-                {
+                 for (int d = 1; d < firstRoll; d++)
+                 {
                     roll[rollCount][d] = dice.Next(1, 7);
+                 }
+
+                rollCount++;
+
+                 for(int i = 1; i < secondRoll; i++)
+                 {
+                    roll[rollCount][i] = dice.Next(1, 7);
+                 }
+
+                rollCount++;
+
+                 for(int e = 1; e < thirdRoll; e++)
+                {
+                    roll[rollCount][e] = dice.Next(1, 7);
                 }
 
                 rollCount++;
