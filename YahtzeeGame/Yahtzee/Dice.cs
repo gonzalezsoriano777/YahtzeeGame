@@ -37,43 +37,30 @@ namespace YahtzeeGame
             int rollCount = 0;
 
             while(rollCount < 3)
-            {
-
-                Console.WriteLine("Welcome to Yahtzee!");
-                Console.WriteLine("Would you like to roll?");
-                string userInput = Console.ReadLine();
-                
+            {          
                 for(int d = 1; d < firstRoll; d++)
                 {
                     roll[rollCount][d] = dice.Next(1, 7);
                 }
 
-                if (userInput == "yes")
-                {
-                    rollCount++;
-                }
-
+                rollCount++;
 
                 for(int i = 1; i < secondRoll; i++)
                 {
                     roll[rollCount][i] = dice.Next(1, 7);
                 }
 
-                if (userInput == "yes")
-                {
-                    rollCount++;
-                }
+
+                rollCount++;
 
 
-                for(int e = 1; e < thirdRoll; e++)
+                for (int e = 1; e < thirdRoll; e++)
                 {
                     roll[rollCount][e] = dice.Next(1, 7);
                 }
 
-                if (userInput == "yes")
-                {
-                    rollCount++;
-                }
+                rollCount++;
+
 
             }
 
