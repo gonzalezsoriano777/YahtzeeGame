@@ -37,33 +37,15 @@ namespace YahtzeeGame
             int rollCount = 0;
 
             while(rollCount < 3)
-            {          
-                for(int d = 1; d < firstRoll; d++)
+            {
+
+                for (int d = 1; d < firstRoll; d++)
                 {
                     roll[rollCount][d] = dice.Next(1, 7);
                 }
 
                 rollCount++;
-
-                for(int i = 1; i < secondRoll; i++)
-                {
-                    roll[rollCount][i] = dice.Next(1, 7);
-                }
-
-
-                rollCount++;
-
-
-                for (int e = 1; e < thirdRoll; e++)
-                {
-                    roll[rollCount][e] = dice.Next(1, 7);
-                }
-
-                rollCount++;
-
-
             }
-
             return roll;
         }
 
