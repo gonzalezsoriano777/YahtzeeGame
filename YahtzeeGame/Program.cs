@@ -14,9 +14,16 @@ namespace YahtzeeGame
             Dice newDice = new Dice();
            
             int[][] diceResult = newDice.rollDicesThreeTimes();
+            int rounds = 1;
+
 
             foreach (int[] row in diceResult)
             {
+                if (rounds < 4)
+                {
+                    Console.WriteLine("Round {0}: ", rounds);
+                    rounds++;
+                }              
                 foreach (var dice in row)
                 {
                     Console.WriteLine(dice);
